@@ -3,4 +3,5 @@ class EmailValidator < ActiveModel::Validator
     unless record.email.unique?
       record.errors[:email] << "Name can't be blank, Email has already been taken"
     end
+    end
 end
