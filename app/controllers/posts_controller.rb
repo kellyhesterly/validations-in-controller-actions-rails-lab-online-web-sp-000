@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post!, only: [:show, :edit, :update, :post]
+  before_action :set_post!, only: [:show, :edit, :update]
 
   def show
   end
