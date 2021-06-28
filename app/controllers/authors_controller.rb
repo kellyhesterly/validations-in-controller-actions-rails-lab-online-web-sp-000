@@ -12,7 +12,6 @@ class AuthorsController < ApplicationController
           @author.save
           redirect_to author_path(@author)
       else
-        "Name can't be blank, Email has already been taken"
         render :new
       end
   end
