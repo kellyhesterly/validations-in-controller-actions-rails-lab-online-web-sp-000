@@ -4,6 +4,9 @@ class PostsController < ApplicationController
   def show
   end
 
+  def post
+  end
+
   def edit
   end
 
