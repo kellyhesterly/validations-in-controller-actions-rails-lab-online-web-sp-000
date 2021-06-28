@@ -1,8 +1,6 @@
+
 class Post < ActiveRecord::Base
-  validates :post, presence: true
-
-  def post
-    @post = Post.all {|post| post.id == post.id}
-  end
-
+  validates :title, presence: true
+  validates :content, length: { minimum: 100 }
+  validates :category, inclusion: { in: %w(Fiction Non-Fiction) }
 end
